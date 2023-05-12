@@ -1,0 +1,1 @@
+This project is a UNIx command interpreter that replicates the functionalities of the simple shell (sh) and includes additional functions. The program is entirely written in C and is created as a milestone project for the ALX Software Engineering program

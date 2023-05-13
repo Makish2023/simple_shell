@@ -1,7 +1,9 @@
-Table of Contents
-Description
-Installation
-Authors
+<h1>Table of Contents</h1>
+<ul>
+<li>Description</li>
+<li>Installation</li>
+<li>Authors</li>
+  </ul>
 
 <h1>Description</h1>
 
@@ -18,10 +20,12 @@ Executing commands using the execve() system call
 Handling built-in commands such as cd, env, and exit
 
 
-Installation
-git clone https://github.com/Makish2023/simple_shell.git
+<h1>Installation</h1>
+<p>git clone https://github.com/Makish2023/simple_shell.git</p>
 
-Authors
-Kevin Oroko:
-Paul Sikabalu
+<h1>Authors</h1>
+<ul>
+  <li>Kevin Oroko</li>
+  <li>Paul Sikabalu</li>
+ </ul>
 

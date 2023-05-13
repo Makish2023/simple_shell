@@ -6,18 +6,18 @@
   </ul>
 
 <h1 id="description">Description</h1>
-
+<p style="font-family: times-new-roman">
 This project is a UNIx command interpreter that replicates the functionalities of the simple shell (sh) and includes additional functions. The program is entirely written in C and is created as a milestone project for the ALX Software Engineering program.
 
 It is capable of executing commands entered by the user and displaying the output of those commands.
+</p>
+<p><h3>The shell is capable of:</h3></p>
 
-<p><h4>The shell is capable of:</h4></p>
-<i>
 <p> - Reading commands from the command line or from a script file</p>
 <p> - Parsing command arguments and options</p>
 <p> - Executing commands using the execve() system call</p>
 <p> - Handling built-in commands such as cd, env, and exit</p>
-  </i>
+
 
 
 <h1 id="installation">Installation</h1>

@@ -1,7 +1,7 @@
 <h1>Table of Contents</h1>
 <ul>
 <li>Description</li>
-<li>Installation</li>
+  <li><a href="#installation">Installation</a></li>
 <li>Authors</li>
   </ul>
 
@@ -20,7 +20,7 @@ Executing commands using the execve() system call
 Handling built-in commands such as cd, env, and exit
 
 
-<h1>Installation</h1>
+<h1 id="installation">Installation</h1>
 <p>git clone https://github.com/Makish2023/simple_shell.git</p>
 
 <h1>Authors</h1>

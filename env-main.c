@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(char **env)
+int main(int argc, char *argv[])
 {
     unsigned int i;
 

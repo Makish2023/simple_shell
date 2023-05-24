@@ -1,15 +1,4 @@
-#include "main.h"
-
-/**
- * interactive - returns true if shell is interactive mode
- * @info: struct address
- *
- * Return: 1 if interactive mode, 0 otherwise
- */
-int interactive(info_t *info)
-{
-	return (isatty(STDIN_FILENO) && info->readfd <= 2);
-}
+#include "shell.h"
 
 /**
  * is_delim - checks if character is a delimeter
@@ -47,28 +36,25 @@ int _isalpha(int c)
 
 int _atoi(char *s)
 {
-	int i, sign = 1, flag = 0, output;
-	unsigned int result = 0;
+	int i, sign = 1, output = 0;
 
-	for (i = 0;  s[i] != '\0' && flag != 2; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '-')
 			sign *= -1;
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			flag = 1;
-			result *= 10;
-			result += (s[i] - '0');
+			output *= 10;
+			output += (s[i] - '0');
 		}
-		else if (flag == 1)
-			flag = 2;
+		else if (output != 0)
+		{
+			// Stop conversion if a non-digit is encountered
+			break;
+		}
 	}
 
-	if (sign == -1)
-		output = -result;
-	else
-		output = result;
-
-	return (output);
+	return sign * output;
 }
+
